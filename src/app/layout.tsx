@@ -18,9 +18,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Leadist — Every Lead. Every Deal. One CRM.",
+  title: "Leadist. Every Lead. Every Deal. One CRM.",
   description:
-    "Leadist is the all-in-one CRM for capturing leads, running follow-ups, and closing deals — one dashboard for your whole sales team.",
+    "Leadist is the all-in-one CRM for capturing leads, running follow-ups, and closing deals, all from one dashboard for your whole sales team.",
   icons: {
     icon: [
       { url: "/favicon.ico" },

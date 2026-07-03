@@ -7,36 +7,36 @@ const features: FeatureItem[] = [
     title: "Track every lead in real time",
     description:
       "See today's leads, hot leads, conversion rate, and pipeline value the moment you log in.",
-    image: "/images/promptmonitor.io/assets/features-img/track-ai-visibility.png",
+    image: "/images/promptmonitor.io/assets/features-img/feature1.png",
     imageAlt: "Real-time lead tracking dashboard",
   },
   {
     title: "Spot leads slipping through the cracks",
     description:
       "Surface leads with no follow-up added or a missed next-follow-up date before they go cold.",
-    image: "/images/promptmonitor.io/assets/features-img/find-ai-sources.png",
+    image: "/images/promptmonitor.io/assets/features-img/feature2.png",
     imageAlt: "Leads with missed follow-ups",
   },
   {
     title: "Get notified the moment something happens",
     description:
       "Every call, remark, status change, and task update lands in a live activity feed.",
-    image: "/images/promptmonitor.io/assets/features-img/ai-bot-analytics.png",
+    image: "/images/promptmonitor.io/assets/features-img/feature4.png",
     imageAlt: "Live activity feed",
     ctaLabel: "Learn more",
   },
   {
     title: "Reports, without the spreadsheet chaos",
     description:
-      "30+ built-in reports — lead status, source-wise, call feedback, staff attendance — exportable to Excel in one click.",
-    image: "/images/promptmonitor.io/assets/features-img/web-analytics.png",
+      "30+ built-in reports (lead status, source-wise, call feedback, staff attendance) exportable to Excel in one click.",
+    image: "/images/promptmonitor.io/assets/features-img/feature3.png",
     imageAlt: "Built-in CRM reports",
   },
   {
     title: "Every lead's full contact card in one place",
     description:
-      "Name, phone, location, purpose, source, assigned agent, next follow-up — one click away.",
-    image: "/images/promptmonitor.io/assets/features-img/publishers-contacts.png",
+      "Name, phone, location, purpose, source, assigned agent, and next follow-up are all one click away.",
+    image: "/images/promptmonitor.io/assets/features-img/feature5.png",
     imageAlt: "Lead contact card",
   },
   {
@@ -44,14 +44,14 @@ const features: FeatureItem[] = [
     description:
       "Build a campaign from any lead filter, then reach every lead by email or WhatsApp using saved templates.",
     image:
-      "/images/promptmonitor.io/assets/features-img/know-when-to-outreach-outrank.png",
+      "/images/promptmonitor.io/assets/features-img/feature6.png",
     imageAlt: "Email and WhatsApp campaign builder",
   },
   {
     title: "See how every agent stacks up",
     description:
       "Compare conversion rate, deals closed, and revenue per staff member side by side.",
-    image: "/images/promptmonitor.io/assets/features-img/discover-competitors.png",
+    image: "/images/promptmonitor.io/assets/features-img/feature7.png",
     imageAlt: "Staff performance comparison",
     ctaLabel: "View live demo",
   },
@@ -59,22 +59,22 @@ const features: FeatureItem[] = [
     title: "Never lose a remark or note again",
     description:
       "Every call note and status update is logged against the lead, with who added it and when.",
-    image: "/images/promptmonitor.io/assets/features-img/brand-monitor.png",
+    image: "/images/promptmonitor.io/assets/features-img/feature8.png",
     imageAlt: "Lead activity and notes log",
     ctaLabel: "View live demo",
   },
   {
     title: "Know which sources actually convert",
     description:
-      "See which channel — Facebook, referral, walk-in — is really turning into won deals, not just raw leads.",
-    image: "/images/promptmonitor.io/assets/features-img/search-queries.png",
+      "See which channel, such as Facebook, referral, or walk-in, is really turning into won deals, not just raw leads.",
+    image: "/images/promptmonitor.io/assets/features-img/feature9.png",
     imageAlt: "Lead source conversion analytics",
   },
   {
     title: "Track leads and field staff by location",
     description:
       "See where your leads are concentrated and where field agents checked in today.",
-    image: "/images/promptmonitor.io/assets/features-img/localization.png",
+    image: "/images/promptmonitor.io/assets/features-img/feature10.png",
     imageAlt: "Lead and field-staff location map",
   },
 ];

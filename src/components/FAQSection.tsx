@@ -14,12 +14,12 @@ const faqs: FaqItem[] = [
   {
     question: "How is Leadist different from a spreadsheet?",
     answer:
-      "Automatic follow-up reminders, full activity logs, role-based access, and 30+ ready-made reports — no manual upkeep.",
+      "Automatic follow-up reminders, full activity logs, role-based access, and 30+ ready-made reports, with no manual upkeep.",
   },
   {
     question: "Where can leads come from?",
     answer:
-      "Manual entry, bulk import, or API — sources like Facebook, referral, or walk-in are fully customizable in settings.",
+      "Manual entry, bulk import, or API. Sources like Facebook, referral, or walk-in are fully customizable in settings.",
   },
   {
     question: "Can I customize my sales pipeline?",
@@ -29,7 +29,7 @@ const faqs: FaqItem[] = [
   {
     question: "Does Leadist support multiple staff, roles, and branches?",
     answer:
-      "Yes — Staff, Roles & Permissions, Departments, Branches, and Work Modes are all built in.",
+      "Yes. Staff, Roles & Permissions, Departments, Branches, and Work Modes are all built in.",
   },
   {
     question: "Can I send emails and WhatsApp messages from Leadist?",
@@ -39,7 +39,7 @@ const faqs: FaqItem[] = [
   {
     question: "What reports does Leadist provide?",
     answer:
-      "Lead status, source-wise, call activity, staff attendance, deal-by-stage, and conversion reports — all exportable to Excel.",
+      "Lead status, source-wise, call activity, staff attendance, deal-by-stage, and conversion reports, all exportable to Excel.",
   },
   {
     question: "Is my data secure, and can I recover deleted records?",

@@ -53,7 +53,7 @@ export function HeroDemoMockup() {
             style={{ width: 1440, height: 798 }}
           >
             <Image
-              src="/images/promptmonitor.io/assets/promptmonitor-hero-img-latest.png"
+              src="/images/promptmonitor.io/assets/banner.png"
               alt="Leadist CRM dashboard showing lead and pipeline analytics"
               width={1440}
               height={798}

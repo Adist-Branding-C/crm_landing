@@ -1,16 +1,21 @@
 import Image from "next/image";
+import { Phone, Webhook } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const logos = [
-  { src: "/images/promptmonitor.io/llms/openai-logo.svg", alt: "OpenAI" },
-  { src: "/images/promptmonitor.io/llms/claude-logo.svg", alt: "Anthropic" },
-  { src: "/images/promptmonitor.io/llms/gemini-logo.svg", alt: "Gemini" },
-  { src: "/images/promptmonitor.io/llms/deepseek-logo.svg", alt: "DeepSeek" },
-  { src: "/images/promptmonitor.io/llms/grok-logo.svg", alt: "Grok" },
-  { src: "/images/promptmonitor.io/llms/perplexity-logo.svg", alt: "Perplexity" },
-  { src: "/images/promptmonitor.io/llms/ai_mode-logo.svg", alt: "AI Mode" },
-  { src: "/images/promptmonitor.io/llms/ai_overview-logo.svg", alt: "AI Overview" },
-] as const;
+type IntegrationLogo =
+  | { alt: string; src: string; icon?: never }
+  | { alt: string; icon: typeof Phone; src?: never };
+
+const logos: IntegrationLogo[] = [
+  { src: "/images/brand-logos/whatsapp.svg", alt: "WhatsApp" },
+  { src: "/images/brand-logos/facebook.svg", alt: "Facebook" },
+  { src: "/images/brand-logos/gmail.svg", alt: "Gmail" },
+  { src: "/images/brand-logos/googlesheets.svg", alt: "Google Sheets" },
+  { icon: Phone, alt: "Phone Dialer" },
+  { src: "/images/brand-logos/googlecalendar.svg", alt: "Google Calendar" },
+  { icon: Webhook, alt: "Webhooks" },
+  { src: "/images/brand-logos/microsoft.svg", alt: "Microsoft" },
+];
 
 export function LlmLogosSection() {
   return (
@@ -33,15 +38,22 @@ export function LlmLogosSection() {
           {logos.map((logo) => (
             <div
               key={logo.alt}
-              className="flex h-[78px] items-center justify-center border-b border-r border-[#e4e5e6] p-6"
+              className="flex h-[78px] items-center justify-center gap-2.5 border-b border-r border-[#e4e5e6] p-6"
             >
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                width={120}
-                height={30}
-                className="h-auto w-auto max-h-[30px] object-contain"
-              />
+              {logo.icon ? (
+                <logo.icon className="h-6 w-6 shrink-0 text-[#3a3a3a]" />
+              ) : (
+                <Image
+                  src={logo.src}
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="h-6 w-6 shrink-0 object-contain"
+                />
+              )}
+              <span className="text-sm font-medium text-[#3a3a3a]">
+                {logo.alt}
+              </span>
             </div>
           ))}
         </div>

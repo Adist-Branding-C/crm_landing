@@ -20,7 +20,7 @@ export default function Home() {
       <main className="pt-[77px]">
         <HeroSection />
         <HeroDemoMockup />
-        <TrustedByBar />
+        {/* <TrustedByBar /> */}
         <DividerSection />
         <FeaturesSection />
         <DividerSection />

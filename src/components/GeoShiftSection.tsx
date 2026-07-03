@@ -9,7 +9,7 @@ export function GeoShiftSection() {
         the CRM built to close
       </div>
       <h2 className="font-heading text-[28px] md:text-[36px] font-medium leading-[46px] tracking-[-0.72px] text-white max-w-[500px]">
-        Leadist puts every lead, task, and deal in one pipeline — so your
+        Leadist puts every lead, task, and deal in one pipeline, so your
         team responds first.
       </h2>
       <p className="text-lg text-white max-w-[440px]">

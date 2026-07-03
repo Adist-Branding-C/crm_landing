@@ -12,7 +12,7 @@ export function TestimonialSection() {
         <blockquote className="text-[32px] font-normal leading-[38.4px] text-[#1a1a1a]">
           Since switching to Leadist, we stopped losing leads in
           spreadsheets. Our follow-up rate went up in the first month, and
-          our whole team finally works off one pipeline — a game changer for
+          our whole team finally works off one pipeline, a game changer for
           our agency.
         </blockquote>
         <div className="flex flex-col items-center gap-1.5">

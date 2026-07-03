@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
+import { Link as LinkIcon, Menu, X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
@@ -48,8 +48,9 @@ export function Navbar() {
           </button>
           <Link
             href="#"
-            className="flex h-9 items-center justify-center rounded-md bg-[#1a1a1a] px-10 text-sm font-medium text-white"
+            className="flex h-9 items-center justify-center gap-2 rounded-md bg-[#1a1a1a] px-10 text-sm font-medium text-white"
           >
+            <LinkIcon className="h-4 w-4" />
             Start Free Trial
           </Link>
         </div>
@@ -91,8 +92,9 @@ export function Navbar() {
             </button>
             <Link
               href="#"
-              className="flex h-9 items-center justify-center rounded-md bg-[#1a1a1a] px-10 text-sm font-medium text-white"
+              className="flex h-9 items-center justify-center gap-2 rounded-md bg-[#1a1a1a] px-10 text-sm font-medium text-white"
             >
+              <LinkIcon className="h-4 w-4" />
               Start Free Trial
             </Link>
           </div>
