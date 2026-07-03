@@ -7,9 +7,29 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", "Inter Fallback", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
-  --font-heading: var(--font-sans);
+  --font-heading: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background-secondary: var(--background-secondary);
+  --color-background-tertiary: var(--background-tertiary);
+  --color-background-superlight: var(--background-superlight);
+  --color-background-z: var(--background-z);
+  --color-text-heading: var(--text-heading);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-border-primary: var(--border-primary);
+  --color-border-secondary: var(--border-secondary);
+  --color-border-darker: var(--border-darker);
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-blue-hover: var(--brand-blue-hover);
+  --color-brand-blue-light: var(--brand-blue-light);
+  --color-success: var(--success);
+  --color-success-text: var(--success-text);
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -49,23 +69,23 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: #fafafa;
+  --foreground: #1a1a1a;
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: #1a1a1a;
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --popover-foreground: #1a1a1a;
+  --primary: #1a1a1a;
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --secondary: #5a5a5a;
+  --secondary-foreground: #1a1a1a;
+  --muted: #f5f5f5;
+  --muted-foreground: #7a7a7a;
+  --accent: #f5f5f5;
+  --accent-foreground: #1a1a1a;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
+  --border: #e4e5e6;
+  --input: #e4e5e6;
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
@@ -81,6 +101,37 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* promptmonitor.io brand tokens */
+  --background-secondary: #f5f5f5;
+  --background-tertiary: #f0f0f0;
+  --background-superlight: #fafafa;
+  --background-z: #e4e5e6;
+  --primary-main: #1a1a1a;
+  --primary-main-hover: #333;
+  --primary-contrast: #fff;
+  --text-heading: #1a1a1a;
+  --text-primary: #3a3a3a;
+  --text-secondary: #5a5a5a;
+  --text-tertiary: #7a7a7a;
+  --border-primary: #e4e5e6;
+  --border-secondary: #f5f5f5;
+  --border-darker: #d9dadb;
+  --positive: #007c65;
+  --negative: #d1002f;
+  --success: #3fb52a;
+  --success-text: #237f12;
+  --success-text-default: #359923;
+  --error: #ea4335;
+  --danger-primary: #f21f1f;
+  --danger-primary-hover: #d1002f;
+  --brand-primary: #fe4a23;
+  --brand-blue: #2462ff;
+  --brand-blue-hover: #1a47c4;
+  --brand-blue-light: #1a72f5;
+  --card-shadow-sm: 0px 1px 1px 0px #0000000f, 0px 1px 3px 0px #0000000f;
+  --card-shadow: 0px 1px 1px 0px #0000001a, 0px 1px 4px 0px #0000000f;
+  --new-card-shadow: #0000000d 0px 4px 16px;
 }
 
 .dark {
