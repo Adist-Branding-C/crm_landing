@@ -1,12 +1,12 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Image from "next/image"
 import { Expand, Lock } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const DEMO_SHARE_URL =
   "https://promptmonitor.io/share/c6975337-08aa-4ea6-8eb3-beb9e73fd074"
-const DEMO_IFRAME_URL = `${DEMO_SHARE_URL}/prompts/1cc56cbe-f62a-476c-b387-36334ff176fe`
 
 export function HeroDemoMockup() {
   const [scrolled, setScrolled] = useState(false)
@@ -25,7 +25,7 @@ export function HeroDemoMockup() {
       <div className="flex justify-center items-center w-full px-3 pb-3 relative">
         <div
           className={cn(
-            "relative overflow-hidden rounded-lg transition-[max-width,margin-bottom] duration-[800ms] ease-[cubic-bezier(0.34,1.5,0.64,1)]",
+            "relative w-full overflow-hidden rounded-lg transition-[max-width,margin-bottom] duration-[800ms] ease-[cubic-bezier(0.34,1.5,0.64,1)]",
             "shadow-[0_0_0_1px_rgba(0,0,0,0.04),0_1px_1px_-0.5px_rgba(0,0,0,0.04),0_3px_3px_-1.5px_rgba(0,0,0,0.04),0_6px_6px_-3px_rgba(0,0,0,0.04),0_12px_12px_-6px_rgba(0,0,0,0.02),0_24px_24px_-12px_rgba(0,0,0,0.02),0_24px_24px_2px_rgba(0,0,0,0.05)]",
             scrolled
               ? "max-w-[1000px] h-[581px] mb-9"
@@ -46,15 +46,23 @@ export function HeroDemoMockup() {
               <span>promptmonitor.io/demo</span>
             </a>
           </div>
-          <iframe
-            src={DEMO_IFRAME_URL}
-            title="promptmonitor.io demo"
+          <div
             className={cn(
-              "absolute top-10 left-0 border-0 origin-top-left transition-transform duration-[800ms] ease-[cubic-bezier(0.34,1.5,0.64,1)]",
+              "absolute top-10 left-0 origin-top-left overflow-hidden transition-transform duration-[800ms] ease-[cubic-bezier(0.34,1.5,0.64,1)]",
               scrolled ? "scale-[0.694]" : "scale-75"
             )}
-            style={{ width: 1440, height: 838 }}
-          />
+            style={{ width: 1440, height: 798 }}
+          >
+            <Image
+              src="/images/promptmonitor.io/assets/promptmonitor-hero-img-latest.png"
+              alt="Promptmonitor dashboard showing AI visibility analytics"
+              width={1440}
+              height={798}
+              className="w-full h-full object-cover object-top"
+              unoptimized
+              priority
+            />
+          </div>
           <a
             href={DEMO_SHARE_URL}
             target="_blank"
