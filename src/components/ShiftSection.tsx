@@ -145,8 +145,9 @@ export function ShiftSection() {
   return (
     <div className="flex-1">
       <div className="flex flex-col gap-10 mb-10 px-[30px]">
-        <ScrollRevealText text="Search is Shifting from Search Engines to AI." />
-        <ScrollRevealText text="The monthly active users of AI / LLMs has grown to over 1 billion by June 2025." />
+        <ScrollRevealText text="Sales teams are drowning in spreadsheets and missed follow-ups." />
+        {/* TODO: replace with a real, sourced statistic before publishing — do not ship an invented number */}
+        <ScrollRevealText text="Businesses lose a significant share of qualified leads every year to slow or missed follow-ups." />
       </div>
       <MauBarChart />
     </div>

@@ -5,8 +5,7 @@ import Image from "next/image"
 import { Expand, Lock } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-const DEMO_SHARE_URL =
-  "https://promptmonitor.io/share/c6975337-08aa-4ea6-8eb3-beb9e73fd074"
+const DEMO_SHARE_URL = "#"
 
 export function HeroDemoMockup() {
   const [scrolled, setScrolled] = useState(false)
@@ -43,7 +42,7 @@ export function HeroDemoMockup() {
               href="#"
             >
               <Lock className="w-3 h-3 flex-shrink-0 text-[#666]" />
-              <span>promptmonitor.io/demo</span>
+              <span>leadist.com/dashboard</span>
             </a>
           </div>
           <div
@@ -55,7 +54,7 @@ export function HeroDemoMockup() {
           >
             <Image
               src="/images/promptmonitor.io/assets/promptmonitor-hero-img-latest.png"
-              alt="Promptmonitor dashboard showing AI visibility analytics"
+              alt="Leadist CRM dashboard showing lead and pipeline analytics"
               width={1440}
               height={798}
               className="w-full h-full object-cover object-top"

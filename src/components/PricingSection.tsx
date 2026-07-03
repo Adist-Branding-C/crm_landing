@@ -4,27 +4,28 @@ import { cn } from "@/lib/utils";
 import { TrustedByBar } from "@/components/TrustedByBar";
 import type { PricingPlan } from "@/types/content";
 
+/**
+ * TODO product decision: the subscription API prices per staff/month
+ * (staffCount, perStaffPrice), which may fit better than these flat tiers.
+ * Keeping flat pricing for now (Option A from the content plan) — revisit
+ * if per-staff pricing (Option B) is preferred.
+ */
 const plans: PricingPlan[] = [
   {
     name: "Starter",
     tagline: "Essentials for small businesses",
     priceMonthly: 29,
     priceMonthlyStruck: 49,
-    ctaLabel: "Try free for 7 days",
+    ctaLabel: "Start Free Trial",
     ctaHref: "#",
     icon: "/images/promptmonitor.io/pricing-startup-icon.svg",
     features: [
-      "1 project",
-      "25 prompts",
-      "2250 responses per month",
-      "Twice a week refresh",
-      "ChatGPT (Open AI), Claude, Gemini, DeepSeek, Grok, Perplexity",
-      "Website Analytics",
-      "AI Search Bot and Crawler Analytics",
-      "Export to CSV",
-      "1 team seat",
-      "Weekly email reports",
-      "Email + Live chat support",
+      "Up to 3 staff",
+      "Unlimited leads",
+      "Follow-up reminders & tasks",
+      "Lead status & call activity reports",
+      "Excel export",
+      "Email support",
     ],
   },
   {
@@ -34,43 +35,34 @@ const plans: PricingPlan[] = [
     priceMonthlyStruck: 66,
     badge: "79% pick this option",
     highlighted: true,
-    ctaLabel: "Try free for 7 days",
+    ctaLabel: "Start Free Trial",
     ctaHref: "#",
     icon: "/images/promptmonitor.io/pricing-pro-icon.svg",
     features: [
-      "2 projects",
-      "50 prompts",
-      "4500 responses per month",
-      "Daily refresh",
-      "All models in Starter",
-      "Website Analytics",
-      "AI Search Bot and Crawler Analytics",
-      "Export to CSV",
-      "Unlimited team seats",
-      "Weekly email reports",
-      "Email + Live chat support",
+      "Everything in Starter",
+      "Deals & sales pipeline",
+      "Email & WhatsApp campaigns",
+      "Advanced reports & exports",
+      "Up to 10 staff",
+      "Priority email support",
     ],
   },
   {
-    name: "Pro",
-    tagline: "For SMEs and Agencies",
+    name: "Enterprise",
+    tagline: "For SMEs and agencies",
     priceMonthly: 129,
     priceMonthlyStruck: 219,
-    ctaLabel: "Try free for 7 days",
+    ctaLabel: "Talk to Sales",
     ctaHref: "#",
     icon: "/images/promptmonitor.io/pricing-pro-icon.svg",
     features: [
-      "5 projects",
-      "150 prompts",
-      "14000 responses per month",
-      "Daily refresh",
-      "All models in Lite + AI Mode, AI Overview",
-      "Website Analytics",
-      "AI Search Bot and Crawler Analytics",
-      "Export to CSV",
-      "Unlimited team seats",
-      "Weekly email reports",
-      "Email + Live chat support",
+      "Everything in Growth",
+      "Roles & permissions",
+      "Departments & branches",
+      "Multi-company admin",
+      "API access",
+      "Unlimited staff",
+      "Priority phone & chat support",
     ],
   },
 ];
@@ -123,14 +115,13 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
   );
 }
 
-function AgencyPricingCard() {
+// TODO: decide whether to keep this free row at all
+function FreePricingCard() {
   const features = [
-    "Unlimited projects",
-    "Unlimited team seats",
-    "Daily refresh",
-    "Track all 8 AI Models",
-    "Website and AI bot Analytics",
-    "Priority support",
+    "1 staff",
+    "Limited leads (50/month)",
+    "Basic follow-up reminders",
+    "Community support",
   ];
   return (
     <div className="flex flex-col md:flex-row gap-10 bg-white rounded-lg p-8 max-w-[1080px] mx-auto mt-2">
@@ -140,10 +131,10 @@ function AgencyPricingCard() {
           <div className="text-xl text-[#7a7a7a]">/mo</div>
         </div>
         <div>
-          <div className="font-medium text-[#5a5a5a]">Agency Plan</div>
+          <div className="font-medium text-[#5a5a5a]">Free</div>
           <p className="text-[#5a5a5a]">
-            For agencies managing multiple clients. Free to pitch to clients,
-            affordable pricing, and revenue sharing.
+            Try Leadist with a single staff account before you commit to a
+            paid plan.
           </p>
         </div>
       </div>
@@ -157,7 +148,7 @@ function AgencyPricingCard() {
           ))}
         </div>
         <button className="self-start px-8 h-11 rounded-md bg-[#1a1a1a] text-white font-medium text-sm">
-          Email us
+          Start Free Trial
         </button>
       </div>
     </div>
@@ -182,10 +173,10 @@ export function PricingSection() {
         ))}
       </div>
 
-      <AgencyPricingCard />
+      <FreePricingCard />
 
       <p className="text-center text-[17px] text-[#666] mt-10">
-        Enterprises can contact us at sales@promptmonitor.io for custom plans
+        Enterprises can contact us at sales@leadist.com for custom plans
         and features.
       </p>
 

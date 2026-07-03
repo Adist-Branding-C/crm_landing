@@ -18,9 +18,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Promptmonitor - Best AI Visibility Optimization / GEO Tool",
+  title: "Leadist — Every Lead. Every Deal. One CRM.",
   description:
-    "Promptmonitor helps you track and optimize your company's visibility across ChatGPT, Perplexity, and other AI/LLMs. Get mentioned in AI with Promptmonitor.",
+    "Leadist is the all-in-one CRM for capturing leads, running follow-ups, and closing deals — one dashboard for your whole sales team.",
   icons: {
     icon: [
       { url: "/favicon.ico" },

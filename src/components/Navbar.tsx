@@ -1,9 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import Link from "next/link"
-import { Link as LinkIcon, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
@@ -23,13 +22,9 @@ export function Navbar() {
           href="/"
           className="flex items-center transition-opacity duration-200 hover:opacity-80"
         >
-          <Image
-            src="/images/promptmonitor.io/assets/promptmonitor-logo.svg"
-            width={165}
-            height={20}
-            alt="Promptmonitor"
-            priority
-          />
+          <span className="font-heading text-xl font-semibold tracking-tight text-black">
+            Leadist
+          </span>
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
@@ -49,14 +44,13 @@ export function Navbar() {
             type="button"
             className="rounded-md border border-[#e4e5e6] bg-white px-4 py-2 text-sm font-medium text-[#3a3a3a]"
           >
-            Log In
+            Login
           </button>
           <Link
             href="#"
-            className="flex h-9 items-center justify-center gap-2 rounded-md bg-[#1a1a1a] px-10 text-sm font-medium text-white"
+            className="flex h-9 items-center justify-center rounded-md bg-[#1a1a1a] px-10 text-sm font-medium text-white"
           >
-            <LinkIcon className="h-4 w-4" />
-            View live demo
+            Start Free Trial
           </Link>
         </div>
 
@@ -93,14 +87,13 @@ export function Navbar() {
               type="button"
               className="rounded-md border border-[#e4e5e6] bg-white px-4 py-2 text-sm font-medium text-[#3a3a3a]"
             >
-              Log In
+              Login
             </button>
             <Link
               href="#"
-              className="flex h-9 items-center justify-center gap-2 rounded-md bg-[#1a1a1a] px-10 text-sm font-medium text-white"
+              className="flex h-9 items-center justify-center rounded-md bg-[#1a1a1a] px-10 text-sm font-medium text-white"
             >
-              <LinkIcon className="h-4 w-4" />
-              View live demo
+              Start Free Trial
             </Link>
           </div>
         </div>

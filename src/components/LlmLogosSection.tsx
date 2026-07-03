@@ -18,11 +18,11 @@ export function LlmLogosSection() {
       <div className="mx-auto flex max-w-[1080px] flex-col gap-8 px-4">
         <div className="flex flex-col items-center gap-2 text-center">
           <h2 className="font-heading text-xl font-medium text-black">
-            We track all AI models that matter
+            Works the way your sales team already works
           </h2>
           <p className="text-[15px] text-[#5a5a5a]">
-            Promptmonitor tracks ChatGPT, Claude, Gemini, Deepseek, Grok,
-            Perplexity, Google AI Overview and AI Mode for AI visibility
+            Leadist connects with the tools your sales team already relies on
+            every day.
           </p>
         </div>
         <div

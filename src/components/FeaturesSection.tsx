@@ -4,78 +4,78 @@ import type { FeatureItem } from "@/types/content";
 
 const features: FeatureItem[] = [
   {
-    title: "Track your AI Visibility",
+    title: "Track every lead in real time",
     description:
-      "One dashboard shows how often ChatGPT, Claude, Gemini, and Perplexity mention your brand. Tracked daily so you catch changes fast.",
+      "See today's leads, hot leads, conversion rate, and pipeline value the moment you log in.",
     image: "/images/promptmonitor.io/assets/features-img/track-ai-visibility.png",
-    imageAlt: "AI Search Visibility Analytics",
+    imageAlt: "Real-time lead tracking dashboard",
   },
   {
-    title: "Find the sources AI cites that don't mention you",
+    title: "Spot leads slipping through the cracks",
     description:
-      "AI models pull from specific articles and websites when answering. See every source, who wrote it, and whether they mention your brand.",
+      "Surface leads with no follow-up added or a missed next-follow-up date before they go cold.",
     image: "/images/promptmonitor.io/assets/features-img/find-ai-sources.png",
-    imageAlt: "Source list with mention status",
+    imageAlt: "Leads with missed follow-ups",
   },
   {
-    title: "See when AI crawl your site",
+    title: "Get notified the moment something happens",
     description:
-      "Track AI bots visiting your website in real-time. Know which pages they read and how often they come back so you know your content is being indexed.",
+      "Every call, remark, status change, and task update lands in a live activity feed.",
     image: "/images/promptmonitor.io/assets/features-img/ai-bot-analytics.png",
-    imageAlt: "AI Bot Analytics Dashboard",
+    imageAlt: "Live activity feed",
     ctaLabel: "Learn more",
   },
   {
-    title: "Website analytics, without the cookie banners",
+    title: "Reports, without the spreadsheet chaos",
     description:
-      "Simple, GDPR-compliant analytics built in. See visitors, page views, and traffic sources. No cookies, no consent popups, no extra tools needed.",
+      "30+ built-in reports — lead status, source-wise, call feedback, staff attendance — exportable to Excel in one click.",
     image: "/images/promptmonitor.io/assets/features-img/web-analytics.png",
-    imageAlt: "Privacy-First Web Analytics",
+    imageAlt: "Built-in CRM reports",
   },
   {
-    title: "Get contact details for every source",
+    title: "Every lead's full contact card in one place",
     description:
-      "We extract author emails and social profiles from every source so you can pitch publishers to mention your brand.",
+      "Name, phone, location, purpose, source, assigned agent, next follow-up — one click away.",
     image: "/images/promptmonitor.io/assets/features-img/publishers-contacts.png",
-    imageAlt: "Contact information for sources",
+    imageAlt: "Lead contact card",
   },
   {
-    title: "Outreach or outrank? We help you decide.",
+    title: "Outreach at scale, on autopilot",
     description:
-      "Every source comes with domain rating, backlinks, and content structure. Low authority? Create better content. High authority? Pitch the author.",
+      "Build a campaign from any lead filter, then reach every lead by email or WhatsApp using saved templates.",
     image:
       "/images/promptmonitor.io/assets/features-img/know-when-to-outreach-outrank.png",
-    imageAlt: "SEO metrics and content outline",
+    imageAlt: "Email and WhatsApp campaign builder",
   },
   {
-    title: "Compare your AI visibility against competitors",
+    title: "See how every agent stacks up",
     description:
-      "See which competitors AI mentions for your target queries. Track their visibility score alongside yours and spot the gaps.",
+      "Compare conversion rate, deals closed, and revenue per staff member side by side.",
     image: "/images/promptmonitor.io/assets/features-img/discover-competitors.png",
-    imageAlt: "Competitor Analysis Dashboard",
+    imageAlt: "Staff performance comparison",
     ctaLabel: "View live demo",
   },
   {
-    title: "Read every word AI says about your brand",
+    title: "Never lose a remark or note again",
     description:
-      "Most businesses have no idea what AI says about them. Track every mention, read the full response, and understand the sentiment.",
+      "Every call note and status update is logged against the lead, with who added it and when.",
     image: "/images/promptmonitor.io/assets/features-img/brand-monitor.png",
-    imageAlt: "Brand Mentions Tracking",
+    imageAlt: "Lead activity and notes log",
     ctaLabel: "View live demo",
   },
   {
-    title: "Discover the keywords AI actually searches",
+    title: "Know which sources actually convert",
     description:
-      "When AI answers questions, it searches the web with specific queries. We capture those exact keywords so you can create content AI will find and cite.",
+      "See which channel — Facebook, referral, walk-in — is really turning into won deals, not just raw leads.",
     image: "/images/promptmonitor.io/assets/features-img/search-queries.png",
-    imageAlt: "AI Search Queries Analytics",
+    imageAlt: "Lead source conversion analytics",
   },
   {
-    title: "Track AI visibility by location",
+    title: "Track leads and field staff by location",
     description:
-      "AI gives different answers in different places. Set your target markets by country, state, or city and see how your visibility changes.",
+      "See where your leads are concentrated and where field agents checked in today.",
     image: "/images/promptmonitor.io/assets/features-img/localization.png",
-    imageAlt: "Geographic AI visibility targeting",
+    imageAlt: "Lead and field-staff location map",
   },
 ];
 

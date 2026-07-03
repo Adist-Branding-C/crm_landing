@@ -5,17 +5,17 @@ import type { BlogPostSummary } from "@/types/content";
 export function BlogSection() {
   const posts: BlogPostSummary[] = [
     {
-      title: "10 Proven Ways to Get Your Brand Mentioned in AI Answers",
+      title: "10 Ways to Stop Losing Leads to Slow Follow-ups",
       excerpt:
-        "Getting your brand mentioned in AI comes down to being present in high-ranking content, Reddit discussions, YouTube videos, and authoritative publications.",
+        "Losing leads usually comes down to slow response times, missed reminders, and no visibility into who's overdue for a follow-up.",
       date: "Feb 10, 2026",
       readTime: "18 min read",
       href: "/blog",
     },
     {
-      title: "Complete Guide to Generative Engine Optimization (GEO) in 2026",
+      title: "The Complete Guide to Building a Sales Pipeline That Converts in 2026",
       excerpt:
-        "Key GEO Strategies: 1. Master SEO First. 2. Build External Brand Mentions. 3. Optimize Content Structure. 4. Implement Schema Markup. 5. Multi-Channel Content Strategy",
+        "Key pipeline strategies: 1. Define clear stages. 2. Automate follow-ups. 3. Track source performance. 4. Report on what matters. 5. Give every agent visibility.",
       date: "Feb 10, 2026",
       readTime: "15 min read",
       href: "/blog",
@@ -29,7 +29,8 @@ export function BlogSection() {
           Latest from our blog
         </h2>
         <p className="text-[17px] text-[#666]">
-          Learn how to improve your AI visibility and dominate AI search results
+          Learn how to build a sales process that converts more leads into
+          deals.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-[1080px] mx-auto">
