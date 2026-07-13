@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { TrustedByBar } from "@/components/TrustedByBar";
+
 import type { PricingPlan } from "@/types/content";
 
 /**
@@ -18,7 +18,7 @@ const plans: PricingPlan[] = [
     priceMonthlyStruck: 49,
     ctaLabel: "Start Free Trial",
     ctaHref: "#",
-    icon: "/images/promptmonitor.io/pricing-startup-icon.svg",
+    icon: "/images/leadistcrm/pricing-startup-icon.svg",
     features: [
       "Up to 3 staff",
       "Unlimited leads",
@@ -37,7 +37,7 @@ const plans: PricingPlan[] = [
     highlighted: true,
     ctaLabel: "Start Free Trial",
     ctaHref: "#",
-    icon: "/images/promptmonitor.io/pricing-pro-icon.svg",
+    icon: "/images/leadistcrm/pricing-pro-icon.svg",
     features: [
       "Everything in Starter",
       "Deals & sales pipeline",
@@ -54,7 +54,7 @@ const plans: PricingPlan[] = [
     priceMonthlyStruck: 219,
     ctaLabel: "Talk to Sales",
     ctaHref: "#",
-    icon: "/images/promptmonitor.io/pricing-pro-icon.svg",
+    icon: "/images/leadistcrm/pricing-pro-icon.svg",
     features: [
       "Everything in Growth",
       "Roles & permissions",
@@ -176,13 +176,9 @@ export function PricingSection() {
       <FreePricingCard />
 
       <p className="text-center text-[17px] text-[#666] mt-10">
-        Enterprises can contact us at sales@leadist.com for custom plans
+        Enterprises can contact us at sales@leadistcrm.com for custom plans
         and features.
       </p>
-
-      <div className="mt-10">
-        <TrustedByBar />
-      </div>
     </section>
   );
 }

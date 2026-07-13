@@ -2,18 +2,24 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Link as LinkIcon, Menu, X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
+import { useDemoModal } from "@/context/DemoModalContext"
 
 const NAV_LINKS = [
-  { href: "/#features", label: "Features" },
+  { href: "/", label: "Home" },
+  { href: "/integrations", label: "Integrations" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/blog", label: "Blog" },
+  { href: "/about", label: "About" },
 ]
 
 export function Navbar() {
+  const pathname = usePathname()
   const [mobileOpen, setMobileOpen] = useState(false)
+  const { openModal } = useDemoModal()
+  const visibleLinks = NAV_LINKS.filter((l) => !(l.href === "/" && pathname === "/"))
 
   return (
     <nav className="fixed inset-x-0 top-0 z-50 h-[77px] border-b border-[#e4e5e6] bg-[#fafafa]">
@@ -28,7 +34,7 @@ export function Navbar() {
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
-          {NAV_LINKS.map((link) => (
+          {visibleLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -40,19 +46,22 @@ export function Navbar() {
         </div>
 
         <div className="hidden items-center gap-3 md:flex">
-          <button
-            type="button"
-            className="rounded-md border border-[#e4e5e6] bg-white px-4 py-2 text-sm font-medium text-[#3a3a3a]"
+          <a
+            href="https://app.leadistcrm.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-md border border-[#e4e5e6] bg-white px-4 py-2 text-sm font-medium text-[#3a3a3a] hover:bg-[#f5f5f5] transition-colors"
           >
             Login
-          </button>
-          <Link
-            href="#"
-            className="flex h-9 items-center justify-center gap-2 rounded-md bg-[#1a1a1a] px-10 text-sm font-medium text-white"
+          </a>
+          <button
+            type="button"
+            onClick={openModal}
+            className="flex h-9 items-center justify-center gap-2 rounded-md bg-[#1a1a1a] px-10 text-sm font-medium text-white hover:bg-[#333] transition-colors"
           >
             <LinkIcon className="h-4 w-4" />
             Start Free Trial
-          </Link>
+          </button>
         </div>
 
         <button
@@ -73,7 +82,7 @@ export function Navbar() {
         )}
       >
         <div className="flex flex-col gap-4 px-6 py-4">
-          {NAV_LINKS.map((link) => (
+          {visibleLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -84,19 +93,22 @@ export function Navbar() {
             </Link>
           ))}
           <div className="flex items-center gap-3 pt-2">
-            <button
-              type="button"
-              className="rounded-md border border-[#e4e5e6] bg-white px-4 py-2 text-sm font-medium text-[#3a3a3a]"
+            <a
+              href="https://app.leadistcrm.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md border border-[#e4e5e6] bg-white px-4 py-2 text-sm font-medium text-[#3a3a3a] hover:bg-[#f5f5f5] transition-colors"
             >
               Login
-            </button>
-            <Link
-              href="#"
-              className="flex h-9 items-center justify-center gap-2 rounded-md bg-[#1a1a1a] px-10 text-sm font-medium text-white"
+            </a>
+            <button
+              type="button"
+              onClick={() => { openModal(); setMobileOpen(false) }}
+              className="flex h-9 items-center justify-center gap-2 rounded-md bg-[#1a1a1a] px-10 text-sm font-medium text-white hover:bg-[#333] transition-colors"
             >
               <LinkIcon className="h-4 w-4" />
               Start Free Trial
-            </Link>
+            </button>
           </div>
         </div>
       </div>

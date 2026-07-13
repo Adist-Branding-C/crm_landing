@@ -17,17 +17,17 @@ export function TestimonialSection() {
         </blockquote>
         <div className="flex flex-col items-center gap-1.5">
           <Image
-            src="/images/promptmonitor.io/assets/steve-lee.webp"
+            src="/images/leadistcrm/assets/huzair.png"
             alt="[Client Name]"
-            width={40}
-            height={40}
-            className="rounded-full object-cover w-10 h-10"
+            width={100}
+            height={100}
+            className="rounded-full object-cover w-25 h-25"
           />
           <div className="text-lg font-semibold text-[#3a3a3a]">
-            [Client Name]
+          Dr Huzair
           </div>
           <div className="text-base text-[#5a5a5a]">
-            [Title], [Company]
+          Dr Huzair - Founder & MD - Dr Expert Edulinks
           </div>
         </div>
       </div>

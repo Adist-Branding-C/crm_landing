@@ -42,7 +42,7 @@ export function HeroDemoMockup() {
               href="#"
             >
               <Lock className="w-3 h-3 flex-shrink-0 text-[#666]" />
-              <span>leadist.com/dashboard</span>
+              <span>leadistcrm.com/dashboard</span>
             </a>
           </div>
           <div
@@ -53,7 +53,7 @@ export function HeroDemoMockup() {
             style={{ width: 1440, height: 798 }}
           >
             <Image
-              src="/images/promptmonitor.io/assets/banner.png"
+              src="/images/leadistcrm/assets/banner.png"
               alt="Leadist CRM dashboard showing lead and pipeline analytics"
               width={1440}
               height={798}

@@ -7,9 +7,7 @@ import { FeaturesSection } from "@/components/FeaturesSection";
 import { LlmLogosSection } from "@/components/LlmLogosSection";
 import { ShiftSectionRow } from "@/components/ShiftSectionRow";
 import { TestimonialSection } from "@/components/TestimonialSection";
-import { PricingSection } from "@/components/PricingSection";
 import { CallToActionSection } from "@/components/CallToActionSection";
-import { BlogSection } from "@/components/BlogSection";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 
@@ -30,11 +28,7 @@ export default function Home() {
         <DividerSection />
         <TestimonialSection />
         <DividerSection />
-        <PricingSection />
-        <DividerSection />
         <CallToActionSection />
-        <DividerSection />
-        <BlogSection />
         <DividerSection />
         <FAQSection />
         <DividerSection />

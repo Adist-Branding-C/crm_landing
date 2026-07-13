@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
+import { Clock } from "lucide-react";
 
 interface ScrollRevealTextProps {
   text: string;
@@ -43,53 +43,26 @@ function ScrollRevealText({ text }: ScrollRevealTextProps) {
   );
 }
 
-interface MauBar {
-  icon: string;
+interface ResponseDelayBar {
+  label: string;
   value: string;
   color: string;
   pct: number;
 }
 
-const bars: MauBar[] = [
-  {
-    icon: "/images/promptmonitor.io/llms/openai-wbg-icon.svg",
-    value: "600M",
-    color: "#10A37F",
-    pct: 100,
-  },
-  {
-    icon: "/images/promptmonitor.io/llms/gemini-icon-filled.svg",
-    value: "400M",
-    color: "#4285F4",
-    pct: 66.7,
-  },
-  {
-    icon: "/images/promptmonitor.io/llms/deepseek-icon-wfilled.svg",
-    value: "97M",
-    color: "#4D6BFE",
-    pct: 16.2,
-  },
-  {
-    icon: "/images/promptmonitor.io/llms/grok-icon.svg",
-    value: "35M",
-    color: "#343434",
-    pct: 5.8,
-  },
-  {
-    icon: "/images/promptmonitor.io/llms/claude-icon-wfilled.svg",
-    value: "19M",
-    color: "#D97706",
-    pct: 3.2,
-  },
-  {
-    icon: "/images/promptmonitor.io/llms/perplexity-icon.svg",
-    value: "15M",
-    color: "#20B2AA",
-    pct: 2.5,
-  },
+// Illustrative placeholder figures, not sourced statistics — swap in real
+// data (e.g. from Leadist's own conversionRate/todayFollowUp analytics) or
+// a cited study before publishing.
+const delayBars: ResponseDelayBar[] = [
+  { label: "Within 5 min", value: "2% lost", color: "#22C55E", pct: 2.44 },
+  { label: "Within 30 min", value: "12% lost", color: "#84CC16", pct: 14.63 },
+  { label: "Within 1 hour", value: "21% lost", color: "#EAB308", pct: 25.61 },
+  { label: "Within 24 hours", value: "45% lost", color: "#F97316", pct: 54.88 },
+  { label: "After 3 days", value: "68% lost", color: "#EF4444", pct: 82.93 },
+  { label: "After 1 week", value: "82% lost", color: "#B91C1C", pct: 100 },
 ];
 
-function MauBarChart() {
+function ResponseDelayChart() {
   const ref = useRef<HTMLDivElement>(null);
   const [filled, setFilled] = useState(false);
 
@@ -111,28 +84,29 @@ function MauBarChart() {
 
   return (
     <div ref={ref} className="flex flex-col gap-4 w-full mt-10">
-      {bars.map((bar, index) => (
+      {delayBars.map((bar, index) => (
         <div
-          key={bar.value}
+          key={bar.label}
           className="h-20 w-full border-t border-b border-[#e4e5e6] relative"
         >
           <div
             className="absolute top-0 left-0 h-full z-[1]"
             style={{
-              background: `linear-gradient(to right, ${bar.color}, ${bar.color})`,
+              backgroundColor: bar.color,
+              opacity: 0.14,
               width: filled ? `${bar.pct}%` : "0%",
               transition: "width 1000ms ease-out",
               transitionDelay: `${index * 100}ms`,
             }}
           />
-          <Image
-            src={bar.icon}
-            alt=""
-            width={28}
-            height={28}
-            className="absolute top-[26px] left-5 z-[3]"
+          <Clock
+            className="absolute top-1/2 left-5 z-[3] h-6 w-6 -translate-y-1/2"
+            style={{ color: bar.color }}
           />
-          <span className="absolute top-[30px] right-5 z-[3] font-heading text-sm font-medium text-[#3a3a3a]">
+          <span className="absolute top-1/2 left-14 z-[3] -translate-y-1/2 font-heading text-sm font-medium text-[#3a3a3a]">
+            {bar.label}
+          </span>
+          <span className="absolute top-1/2 right-5 z-[3] -translate-y-1/2 font-heading text-sm font-semibold text-[#1a1a1a]">
             {bar.value}
           </span>
         </div>
@@ -149,7 +123,7 @@ export function ShiftSection() {
         {/* TODO: replace with a real, sourced statistic before publishing — do not ship an invented number */}
         <ScrollRevealText text="Businesses lose a significant share of qualified leads every year to slow or missed follow-ups." />
       </div>
-      <MauBarChart />
+      <ResponseDelayChart />
     </div>
   );
 }

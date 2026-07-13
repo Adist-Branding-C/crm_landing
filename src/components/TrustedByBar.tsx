@@ -12,7 +12,7 @@ export function TrustedByBar() {
           SEOAesthetic <Asterisk className="h-4 w-4 text-[#fe4a23]" />
         </div>
         <Image
-          src="/images/promptmonitor.io/assets/media-ai-logo.avif"
+          src="/images/leadistcrm/assets/media-ai-logo.avif"
           alt="Media AI"
           width={100}
           height={28}

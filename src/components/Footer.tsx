@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import type { FooterLinkColumn } from "@/types/content";
 
 export function Footer() {
@@ -16,15 +16,14 @@ export function Footer() {
       title: "Company",
       links: [
         { label: "About", href: "#" },
-        { label: "Blog", href: "/blog" },
-        { label: "Contact", href: "#" },
+        { label: "Contact", href: "/contact" },
       ],
     },
     {
       title: "Legal",
       links: [
-        { label: "Privacy Policy", href: "#" },
-        { label: "Terms of Service", href: "#" },
+        { label: "Privacy Policy", href: "/privacy-policy" },
+        { label: "Terms of Service", href: "/terms-and-conditions" },
       ],
     },
   ];
@@ -40,10 +39,22 @@ export function Footer() {
             The CRM built to capture, follow up, and close every lead.
           </p>
           <a
-            href="mailto:support@leadist.com"
+            href="mailto:support@leadistcrm.com"
             className="flex items-center gap-2 text-sm text-[#5a5a5a]"
           >
-            <Mail className="w-4 h-4" /> support@leadist.com
+            <Mail className="w-4 h-4" /> support@leadistcrm.com
+          </a>
+          <a
+            href="mailto:sales@leadistcrm.com"
+            className="flex items-center gap-2 text-sm text-[#5a5a5a]"
+          >
+            <Mail className="w-4 h-4" /> sales@leadistcrm.com
+          </a>
+          <a
+            href="tel:+917025529000"
+            className="flex items-center gap-2 text-sm text-[#5a5a5a]"
+          >
+            <Phone className="w-4 h-4" /> +91 7025529000
           </a>
         </div>
         {columns.map((col) => (
