@@ -90,7 +90,7 @@ const sections = [
       "Right to data portability — request your personal data in a structured, commonly used, machine-readable format.",
       "Right to withdraw consent — where processing is based on your consent, withdraw it at any time without affecting processing already carried out.",
       "Right to lodge a complaint — with your local data protection authority (for example, India's Data Protection Board, the UAE's data protection authority, Saudi Arabia's SDAIA, or, for EU/UK residents, your local supervisory authority or the ICO), in addition to contacting us directly.",
-      "Account and data deletion: any user — Account Holder or Authorized User — can request deletion of their personal account and personal data at any time: in the app (Settings → Delete Account & Data), on the web at leadistcrm.com/account-deletion, or by emailing support@leadistcrm.com.",
+      "Account and data deletion: any user — Account Holder or Authorized User — can request deletion of their personal account and personal data at any time: in the app (Settings → Delete Account & Data) or by emailing support@leadistcrm.com.",
       "Because Authorized User accounts are provisioned by their organization, deletion requests from an Authorized User are reviewed and completed in coordination with their Account Holder's administrator.",
       "Deletion timeline: once we have verified a request, we complete deletion of the associated personal data within 30 days and will confirm with you once it is done.",
       "Response timeline: we will acknowledge and respond to access, correction, and other rights requests within 30 days (the response window specified under both the DPDP Rules and the UAE PDPL), or sooner where local law requires a shorter period.",
@@ -190,9 +190,9 @@ export default function PrivacyPolicyPage() {
                 or wish to exercise your data rights, please contact us at:
               </p>
               <p>
-                Leadist CRM, a product of [INSERT FULL REGISTERED LEGAL NAME]
+                Leadist CRM, a product of Adist Branding Consultancy
                 <br />
-                Registered Address: [INSERT REGISTERED BUSINESS ADDRESS]
+                Registered Address: 1st Floor, Vattappara Tower, Sales Tax Office Rd, Eranhipaalam, Jawahar Nagar, Kozhikode, Kerala 673006
                 <br />
                 Email: info@leadist.com
                 <br />
@@ -209,13 +209,13 @@ export default function PrivacyPolicyPage() {
                 Officer for data-related complaints and grievances is:
               </p>
               <p>
-                [INSERT GRIEVANCE OFFICER NAME]
+                Mohammed Huzair A T M
                 <br />
-                [INSERT TITLE, e.g. Founder / Director]
+                Founer & MD
                 <br />
-                Email: [INSERT GRIEVANCE OFFICER EMAIL]
+                Email: md@leadistcrm.com
                 <br />
-                Phone: [INSERT GRIEVANCE OFFICER PHONE]
+                Phone: 7025529000
               </p>
               <p>
                 We will acknowledge grievances and respond within the
