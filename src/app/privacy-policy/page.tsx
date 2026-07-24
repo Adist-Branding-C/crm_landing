@@ -13,11 +13,14 @@ const sections = [
       "Lead data from Facebook and Instagram Lead Ads: when a person submits a Lead Ad form connected to your Page, we receive the data they submitted — for example their name, email address, phone number, and answers to custom questions on the form — together with identifiers such as the lead ID, form ID, ad ID, and campaign ID.",
       "Usage data: information about how you interact with our application, such as pages visited, features used, and log data (IP address, browser type, access times).",
       "Customer, user, and prospect data that you or your team members enter directly into Leadist CRM to manage your sales pipeline.",
+      "Agent work tracking data: if you are added to a CRM organization as a team member, we collect check-in and check-out (attendance) timestamps, call activity metrics (such as call duration and outcome), task and follow-up completion status, and related performance analytics generated as you use the app, so your organization can monitor and report on team activity.",
       "Mobile application data: when you use the Leadist CRM mobile app, we additionally collect a device push-notification token (via Firebase Cloud Messaging), used only to deliver follow-up, task, and campaign alerts, and diagnostic or crash data (device model, OS version, app version, crash logs, via Firebase Crashlytics), used only to identify and fix bugs. The mobile app does not access your device's call log, contacts, camera, microphone, or location.",
       "Call and activity records: call outcomes, remarks, and follow-up dates that you or your team log against a lead within the app are entered manually by you — they are not sourced from your device's call log.",
+      "Network access: our website and mobile app require an active internet connection to make secure API calls to our servers — this is how your leads, deals, attendance, and account data are synced and kept up to date. We do not use this connection to access data outside of what is described in this Privacy Policy.",
+      "Advertising: we do not use advertising identifiers (such as the Android Advertising ID) and the app does not integrate any third-party advertising SDKs.",
     ],
     footer: [
-      "Some provisions apply only to individuals in certain jurisdictions, such as those protected under the GDPR or India's Digital Personal Data Protection Act.",
+      "This Privacy Policy is designed to meet the requirements of the data protection laws applicable to our users, including India's Digital Personal Data Protection Act, 2023, the UAE's Federal Personal Data Protection Law, Saudi Arabia's Personal Data Protection Law, and, for our EU and UK users, the GDPR and UK GDPR.",
     ],
   },
   {
@@ -56,6 +59,8 @@ const sections = [
     body: [
       "We are committed to protecting your personal information and the lead data entrusted to us, and we take reasonable technical and organizational measures to secure it, including encrypted data transmission (HTTPS/TLS) and access controls limiting who can view stored data. However, no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.",
       "We retain lead data and account information for as long as your account is active or as needed to provide our services, and will delete or anonymize it upon a valid deletion request or account closure, except where we are required to retain it to comply with legal obligations.",
+      "International data transfers: some of our service providers — including Google Firebase / Google Cloud, which we use for app messaging, crash diagnostics, and hosting — may process or store data outside your country of residence, including in India, the United States, or other countries where those providers operate data centers. Where applicable law restricts such transfers (including India's DPDP Act, the UAE PDPL, Saudi Arabia's PDPL, or the GDPR/UK GDPR), we rely on approved safeguards — such as an adequacy finding or standard contractual clauses — before transferring your data internationally.",
+      "Data breach notification: in the event of a personal data breach that affects you, we will notify the relevant data protection authority (for example, India's Data Protection Board, Saudi Arabia's SDAIA within 72 hours, the UAE's data protection authority, or, for EU/UK residents, the applicable supervisory authority) and affected users, within the timelines required under applicable law.",
     ],
   },
   {
@@ -74,12 +79,23 @@ const sections = [
   {
     title: "7. Your Rights and Data Deletion",
     body: [
-      "You may request access to, or correction of, your personal information at any time by contacting support@leadistcrm.com.",
+      "Leadist CRM is used by organizations and individuals primarily in India and the GCC (including the UAE and Saudi Arabia), and occasionally in the EU, UK, and elsewhere. Regardless of where you are located, we offer you the following rights over your personal data; if the law that applies to you provides additional or stronger rights, those apply too.",
       "Leadist CRM is used in two ways: by an organization that subscribes to our service (\"Account Holder\"), and by staff the Account Holder invites to use the app on the organization's behalf (\"Authorized Users\").",
     ],
     bullets: [
-      "Any user — Account Holder or Authorized User — can request deletion of their personal account and personal data at any time: in the app (Settings → Delete Account & Data), on the web at leadistcrm.com/account-deletion, or by emailing support@leadistcrm.com.",
-      "Because Authorized User accounts are provisioned by their organization, deletion requests from an Authorized User are completed in coordination with their Account Holder's administrator. We confirm and complete verified requests within 30 days.",
+      "Right to access — request confirmation of whether we process your personal data, and obtain a copy of it.",
+      "Right to correction (rectification) — request that we correct inaccurate or incomplete personal data, by contacting support@leadistcrm.com.",
+      "Right to erasure (deletion) — request deletion of your personal data, as described below.",
+      "Right to restrict or object to processing — ask us to limit certain processing, or object to processing based on legitimate interests or for direct marketing.",
+      "Right to data portability — request your personal data in a structured, commonly used, machine-readable format.",
+      "Right to withdraw consent — where processing is based on your consent, withdraw it at any time without affecting processing already carried out.",
+      "Right to lodge a complaint — with your local data protection authority (for example, India's Data Protection Board, the UAE's data protection authority, Saudi Arabia's SDAIA, or, for EU/UK residents, your local supervisory authority or the ICO), in addition to contacting us directly.",
+      "Account and data deletion: any user — Account Holder or Authorized User — can request deletion of their personal account and personal data at any time: in the app (Settings → Delete Account & Data), on the web at leadistcrm.com/account-deletion, or by emailing support@leadistcrm.com.",
+      "Because Authorized User accounts are provisioned by their organization, deletion requests from an Authorized User are reviewed and completed in coordination with their Account Holder's administrator.",
+      "Deletion timeline: once we have verified a request, we complete deletion of the associated personal data within 30 days and will confirm with you once it is done.",
+      "Response timeline: we will acknowledge and respond to access, correction, and other rights requests within 30 days (the response window specified under both the DPDP Rules and the UAE PDPL), or sooner where local law requires a shorter period.",
+      "Right to nominate (India): under the DPDP Act, users in India may nominate another individual to exercise their rights under this policy on their behalf in the event of their death or incapacity, by writing to our Grievance Officer (see Section 12).",
+      "Right to compensation and complaint (Saudi Arabia): residents of Saudi Arabia may seek compensation through the competent courts for damage resulting from a violation of the PDPL, and may file a complaint with SDAIA within 90 days of becoming aware of a violation.",
       "Deleting an individual's personal account removes their personal data and login access. It does not delete business records owned by the Account Holder's organization (for example, lead, deal, or call records created while using the CRM) — those remain part of the organization's business data unless the Account Holder separately requests their deletion.",
       "We may retain limited data where required for security, fraud prevention, dispute resolution, or legal/regulatory compliance, as described in Section 5.",
     ],
@@ -96,7 +112,7 @@ const sections = [
   {
     title: "9. Children's Privacy",
     body: [
-      "Leadist CRM is intended for business use and is not directed at children. We do not knowingly collect personal information from individuals under the age of 18.",
+      "Leadist CRM is intended for business use and is not directed at children. We do not knowingly collect personal information from individuals under the age of 18. If we become aware that we have inadvertently collected personal data from a child without appropriate parental or guardian consent, we will take steps to delete that data promptly.",
     ],
   },
   {
@@ -126,10 +142,12 @@ export default function PrivacyPolicyPage() {
                 Overview
               </h2>
               <p>
-                At Leadist CRM (&quot;Leadist&quot;, &quot;we&quot;,
-                &quot;us&quot;, or &quot;our&quot;), your privacy is important
-                to us. This Privacy Policy explains how we collect, use,
-                protect, and share information when you visit our website at
+                Leadist CRM (&quot;Leadist&quot;) is a product and brand of
+                [INSERT FULL REGISTERED LEGAL NAME, e.g. Adist Branding
+                Consultancy Pvt. Ltd.] (&quot;we&quot;, &quot;us&quot;, or
+                &quot;our&quot;). Your privacy is important to us. This
+                Privacy Policy explains how we collect, use, protect, and
+                share information when you visit our website at
                 leadistcrm.com, use the Leadist CRM application, or connect
                 third-party accounts — including Facebook and Instagram — to
                 our services.
@@ -172,11 +190,37 @@ export default function PrivacyPolicyPage() {
                 or wish to exercise your data rights, please contact us at:
               </p>
               <p>
-                Leadist CRM
+                Leadist CRM, a product of [INSERT FULL REGISTERED LEGAL NAME]
+                <br />
+                Registered Address: [INSERT REGISTERED BUSINESS ADDRESS]
                 <br />
                 Email: info@leadist.com
                 <br />
                 Phone: +91 7025529000
+              </p>
+            </div>
+            <div className="text-[17px] text-[#5a5a5a] leading-relaxed space-y-4 mt-10">
+              <h2 className="text-xl font-medium text-[#1a1a1a] mb-2">
+                12. Grievance Officer
+              </h2>
+              <p>
+                In accordance with India&apos;s Digital Personal Data
+                Protection Act, 2023 and applicable rules, the Grievance
+                Officer for data-related complaints and grievances is:
+              </p>
+              <p>
+                [INSERT GRIEVANCE OFFICER NAME]
+                <br />
+                [INSERT TITLE, e.g. Founder / Director]
+                <br />
+                Email: [INSERT GRIEVANCE OFFICER EMAIL]
+                <br />
+                Phone: [INSERT GRIEVANCE OFFICER PHONE]
+              </p>
+              <p>
+                We will acknowledge grievances and respond within the
+                timelines prescribed under the DPDP Rules, and in any case
+                within 30 days of receipt.
               </p>
             </div>
           </div>
