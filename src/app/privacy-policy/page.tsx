@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-
 const sections = [
   {
     title: "1. Information We Collect",
@@ -14,6 +13,8 @@ const sections = [
       "Lead data from Facebook and Instagram Lead Ads: when a person submits a Lead Ad form connected to your Page, we receive the data they submitted — for example their name, email address, phone number, and answers to custom questions on the form — together with identifiers such as the lead ID, form ID, ad ID, and campaign ID.",
       "Usage data: information about how you interact with our application, such as pages visited, features used, and log data (IP address, browser type, access times).",
       "Customer, user, and prospect data that you or your team members enter directly into Leadist CRM to manage your sales pipeline.",
+      "Mobile application data: when you use the Leadist CRM mobile app, we additionally collect a device push-notification token (via Firebase Cloud Messaging), used only to deliver follow-up, task, and campaign alerts, and diagnostic or crash data (device model, OS version, app version, crash logs, via Firebase Crashlytics), used only to identify and fix bugs. The mobile app does not access your device's call log, contacts, camera, microphone, or location.",
+      "Call and activity records: call outcomes, remarks, and follow-up dates that you or your team log against a lead within the app are entered manually by you — they are not sourced from your device's call log.",
     ],
     footer: [
       "Some provisions apply only to individuals in certain jurisdictions, such as those protected under the GDPR or India's Digital Personal Data Protection Act.",
@@ -73,8 +74,17 @@ const sections = [
   {
     title: "7. Your Rights and Data Deletion",
     body: [
-      "You may request access to, correction of, or deletion of your personal information, or the lead data associated with your account, by contacting us at info@leadist.com. If you disconnect your Facebook Page from Leadist CRM, we will stop receiving new lead notifications for that Page, and you may request deletion of previously stored data at any time.",
-      "If Meta notifies us that a user has removed our app's permissions, or requests deletion of their data under Facebook's Data Deletion Callback process, we will process that request and delete the relevant data within a reasonable time.",
+      "You may request access to, or correction of, your personal information at any time by contacting support@leadistcrm.com.",
+      "Leadist CRM is used in two ways: by an organization that subscribes to our service (\"Account Holder\"), and by staff the Account Holder invites to use the app on the organization's behalf (\"Authorized Users\").",
+    ],
+    bullets: [
+      "Any user — Account Holder or Authorized User — can request deletion of their personal account and personal data at any time: in the app (Settings → Delete Account & Data), on the web at leadistcrm.com/account-deletion, or by emailing support@leadistcrm.com.",
+      "Because Authorized User accounts are provisioned by their organization, deletion requests from an Authorized User are completed in coordination with their Account Holder's administrator. We confirm and complete verified requests within 30 days.",
+      "Deleting an individual's personal account removes their personal data and login access. It does not delete business records owned by the Account Holder's organization (for example, lead, deal, or call records created while using the CRM) — those remain part of the organization's business data unless the Account Holder separately requests their deletion.",
+      "We may retain limited data where required for security, fraud prevention, dispute resolution, or legal/regulatory compliance, as described in Section 5.",
+    ],
+    footer: [
+      "If you disconnect your Facebook Page from Leadist CRM, we will stop receiving new lead notifications for that Page, and you may request deletion of previously stored data at any time. If Meta notifies us that a user has removed our app's permissions, or requests deletion of their data under Facebook's Data Deletion Callback process, we will process that request and delete the relevant data within a reasonable time.",
     ],
   },
   {
@@ -96,7 +106,6 @@ const sections = [
     ],
   },
 ];
-
 export default function PrivacyPolicyPage() {
   return (
     <>
@@ -109,10 +118,9 @@ export default function PrivacyPolicyPage() {
                 Privacy Policy
               </h1>
               <p className="text-sm text-[#5a5a5a]">
-                Last updated: July 13, 2026
+                Last updated: July 24, 2026
               </p>
             </div>
-
             <div className="text-[17px] text-[#5a5a5a] leading-relaxed space-y-4 mb-10">
               <h2 className="text-xl font-medium text-[#1a1a1a] mb-2">
                 Overview
@@ -132,7 +140,6 @@ export default function PrivacyPolicyPage() {
                 Privacy Policy.
               </p>
             </div>
-
             {sections.map((section) => (
               <div
                 key={section.title}
@@ -156,7 +163,6 @@ export default function PrivacyPolicyPage() {
                 ))}
               </div>
             ))}
-
             <div className="text-[17px] text-[#5a5a5a] leading-relaxed space-y-4">
               <h2 className="text-xl font-medium text-[#1a1a1a] mb-2">
                 11. Contact Us
