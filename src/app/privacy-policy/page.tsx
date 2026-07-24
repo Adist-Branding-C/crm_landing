@@ -143,8 +143,8 @@ export default function PrivacyPolicyPage() {
               </h2>
               <p>
                 Leadist CRM (&quot;Leadist&quot;) is a product and brand of
-                [INSERT FULL REGISTERED LEGAL NAME, e.g. Adist Branding
-                Consultancy Pvt. Ltd.] (&quot;we&quot;, &quot;us&quot;, or
+                [Adist Branding Consultancy
+] (&quot;we&quot;, &quot;us&quot;, or
                 &quot;our&quot;). Your privacy is important to us. This
                 Privacy Policy explains how we collect, use, protect, and
                 share information when you visit our website at
