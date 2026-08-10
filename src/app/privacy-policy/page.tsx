@@ -22,6 +22,15 @@ const sections = [
     footer: [
       "This Privacy Policy is designed to meet the requirements of the data protection laws applicable to our users, including India's Digital Personal Data Protection Act, 2023, the UAE's Federal Personal Data Protection Law, Saudi Arabia's Personal Data Protection Law, and, for our EU and UK users, the GDPR and UK GDPR.",
     ],
+    extraHeading: "App Tracking Transparency & Advertising",
+    extraIntro:
+      "Leadist CRM does NOT track users. As defined by Apple's App Tracking Transparency (ATT) framework and App Store Guidelines:",
+    extraBullets: [
+      "We do not link data collected from our application with third-party data for targeted advertising or advertising measurement.",
+      "We do not share your data or your leads' data with data brokers or third-party ad networks.",
+      "We do not collect or store Apple's Identifier for Advertisers (IDFA) or Android Advertising ID.",
+      "Third-party services used for app stability and communication (such as Firebase Cloud Messaging for push notifications and Firebase Crashlytics for crash diagnostics) process data strictly for app performance, security, and message delivery—never for advertising tracking.",
+    ],
   },
   {
     title: "2. How We Use Facebook Platform Data",
@@ -179,6 +188,21 @@ export default function PrivacyPolicyPage() {
                 {section.footer?.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}
+                {section.extraHeading && (
+                  <p>
+                    <strong className="text-[#1a1a1a]">
+                      {section.extraHeading}:
+                    </strong>{" "}
+                    {section.extraIntro}
+                  </p>
+                )}
+                {section.extraBullets && (
+                  <ul className="list-disc pl-6 space-y-2">
+                    {section.extraBullets.map((b, i) => (
+                      <li key={i}>{b}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
             <div className="text-[17px] text-[#5a5a5a] leading-relaxed space-y-4">
