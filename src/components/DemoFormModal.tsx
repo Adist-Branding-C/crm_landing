@@ -7,7 +7,7 @@ import { X, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "https://api.leadistcrm.com";
+  process.env.NEXT_PUBLIC_API_BASE_URL || "https://api.leadistcrm.com/api/v1";
 
 interface DemoFormModalProps {
   open: boolean;
