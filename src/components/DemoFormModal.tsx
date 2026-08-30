@@ -2,8 +2,12 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { X } from "lucide-react";
+import axios from "axios";
+import { X, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
+
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000";
 
 interface DemoFormModalProps {
   open: boolean;
@@ -19,11 +23,30 @@ export function DemoFormModal({ open, onClose }: DemoFormModalProps) {
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
   const [teamSize, setTeamSize] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    onClose();
-    router.push("/thank-you");
+    setError(null);
+    setSubmitting(true);
+    try {
+      await axios.post(`${API_BASE_URL}/api/demo-request`, {
+        name,
+        phone,
+        email,
+        company,
+        teamSize,
+      });
+      onClose();
+      router.push("/thank-you");
+    } catch {
+      setError(
+        "Something went wrong while submitting your request. Please try again."
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (!open) return null;
@@ -116,11 +139,20 @@ export function DemoFormModal({ open, onClose }: DemoFormModalProps) {
               ))}
             </select>
           </div>
+          {error && <p className="text-sm text-red-600">{error}</p>}
           <button
             type="submit"
-            className="mt-2 h-12 rounded-md bg-[#1a1a1a] text-white font-medium text-sm hover:bg-[#333] transition-colors"
+            disabled={submitting}
+            className="mt-2 h-12 rounded-md bg-[#1a1a1a] text-white font-medium text-sm hover:bg-[#333] transition-colors disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
           >
-            Book Demo
+            {submitting ? (
+              <>
+                <Loader2 className="w-4 h-4 animate-spin" />
+                Sending...
+              </>
+            ) : (
+              "Book Demo"
+            )}
           </button>
         </form>
       </div>
