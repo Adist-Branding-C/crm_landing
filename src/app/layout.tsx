@@ -19,19 +19,48 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Leadist. Every Lead. Every Deal. One CRM.",
+  title: "Leadist CRM | Every Lead. Every Deal. One CRM.",
   description:
-    "Leadist is the all-in-one CRM for capturing leads, running follow-ups, and closing deals, all from one dashboard for your whole sales team.",
-  icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/seo/favicon.svg", type: "image/svg+xml" },
-    ],
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
-  },
-  openGraph: {
-    images: ["/seo/og-image.png"],
+    "Leadist CRM is an all-in-one customer relationship management platform that helps sales teams capture leads, manage follow-ups, track deals, and grow their business from one powerful dashboard.",
+  keywords: [
+    "Leadist CRM",
+    "CRM",
+    "Customer Relationship Management",
+    "Lead Management",
+    "Sales CRM",
+    "Deal Management",
+    "Sales Management",
+  ],
+
+icons: {
+  icon: "/seo/logo.png",
+  shortcut: "/seo/logo.png",
+  apple: "/seo/logo.png",
+},
+
+openGraph: {
+  title: "Leadist CRM | Every Lead. Every Deal. One CRM.",
+  description:
+    "Leadist CRM helps sales teams capture leads, manage follow-ups, track deals, and close more deals from one powerful platform.",
+  images: [
+    {
+      url: "/seo/logo.png",
+      alt: "Leadist CRM",
+    },
+  ],
+  type: "website",
+},
+twitter: {
+  card: "summary",
+  title: "Leadist CRM | Every Lead. Every Deal. One CRM.",
+  description:
+    "Leadist CRM helps sales teams capture leads, manage follow-ups, track deals, and close more deals from one powerful platform.",
+  images: ["/seo/logo.png"],
+},
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
