@@ -7,7 +7,7 @@ import { X, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000";
+  process.env.NEXT_PUBLIC_API_BASE_URL || "https://api.leadistcrm.com";
 
 interface DemoFormModalProps {
   open: boolean;
@@ -31,7 +31,7 @@ export function DemoFormModal({ open, onClose }: DemoFormModalProps) {
     setError(null);
     setSubmitting(true);
     try {
-      await axios.post(`${API_BASE_URL}/api/demo-request`, {
+      await axios.post(`${API_BASE_URL}/demo-request`, {
         name,
         phone,
         email,
@@ -139,7 +139,9 @@ export function DemoFormModal({ open, onClose }: DemoFormModalProps) {
               ))}
             </select>
           </div>
-          {error && <p className="text-sm text-red-600">{error}</p>}
+
+          {error && <p className="text-sm text-red-600 -mt-1">{error}</p>}
+
           <button
             type="submit"
             disabled={submitting}
